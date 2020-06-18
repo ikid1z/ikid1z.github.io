@@ -1,6 +1,14 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
 @import 'https://fonts.googleapis.com/css2?family=Montserrat&display=swap';
 *, *::after, *::before {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
@@ -41,18 +49,30 @@ circle {
 }
 
 .info-top {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
 }
 .info-top .info__img {
   width: 30%;
   background: #1e1e1e;
   text-align: center;
   max-width: 340px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: nowrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
 }
 .info-top .info__img--w4 {
   width: 300px;
@@ -66,11 +86,21 @@ circle {
 .info-top .info__name {
   width: 70%;
   text-align: center;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: nowrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
   background: #fff;
 }
 .info-top .info__name--p5 {
@@ -128,9 +158,15 @@ circle {
 }
 
 .info-bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
 }
 .info-bottom .info__left {
   height: auto;
@@ -141,20 +177,30 @@ circle {
   color: #fff;
 }
 .info-bottom .button {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   text-align: center;
   line-height: 5em;
 }
 .info-bottom .info__hobby .hobby__text {
   font-size: 2.2em;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   text-align: left;
 }
 .info-bottom .info__hobby .hobby__text p {
-  flex-basis: 50%;
-  flex-shrink: 0;
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
 }
 .info-bottom .info__purpose .purpose__text {
   font-size: 2.2em;
@@ -180,12 +226,19 @@ circle {
   font-weight: 900;
 }
 .info-bottom .info__skill .skill__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 .info-bottom .info__skill .skill__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   width: calc(33.33% - 60px/3);
   padding: 5px;
   margin-right: 20px;
@@ -205,18 +258,26 @@ circle {
   z-index: -1;
 }
 .info-bottom .info__project .project__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   margin-left: 20px;
   margin-left: 5em;
 }
 .info-bottom .info__project .project__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   padding: 5px;
   margin-right: 10px;
   margin-bottom: 10px;
-  box-shadow: 0px 0px 3px 0px #b3b3b3;
+  -webkit-box-shadow: 0px 0px 3px 0px #b3b3b3;
+          box-shadow: 0px 0px 3px 0px #b3b3b3;
 }
 .info-bottom .info__project .project__item:hover {
   background: #ded9d985;
@@ -247,5 +308,3 @@ circle {
 .source a {
   color: #D50000;
 }
-
-/*# sourceMappingURL=style.css.map */
