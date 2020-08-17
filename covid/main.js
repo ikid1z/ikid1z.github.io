@@ -1,9 +1,4 @@
-// Vue.component("list-country",{
-//     props: ['showListCountry'],
-//     template: ` 
-        
-//     `
-// })
+
 new Vue({
     el: '#app',
     data () {
@@ -47,7 +42,6 @@ new Vue({
             });
             this.isShow = true
             // var x = this.data[2].country.includes(`${this.query}`)
-            // console.log(x)
         }
-    }, 
+    }
 })
